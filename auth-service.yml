@@ -7,13 +7,12 @@ spring:
     username: abdulyahiya
     password: yahya9973
     driver-class-name: org.postgresql.Driver
- jpa:
+  jpa:
     hibernate:
       ddl-auto: update    
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-
 
 eureka:
   client:

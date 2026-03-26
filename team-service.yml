@@ -7,7 +7,7 @@ spring:
     username: abdulyahiya
     password: yahya9973
     driver-class-name: org.postgresql.Driver
- jpa:
+  jpa:
     hibernate:
       ddl-auto: update    
     properties:

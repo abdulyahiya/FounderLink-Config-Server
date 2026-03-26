@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/founderlink_xxx
+    url: jdbc:postgresql://localhost:5432/founderlink_messaging
     username: abdulyahiya
     password: yahya9973
     driver-class-name: org.postgresql.Driver

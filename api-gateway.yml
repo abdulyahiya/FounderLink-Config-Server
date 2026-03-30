@@ -49,8 +49,13 @@ spring:
           uri: lb://notification-service
           predicates:
             - Path=/notifications/**, /v3/api-docs/notifications/**
-          filters:
             - RewritePath=/v3/api-docs/notifications/(?<path>.*), /v3/api-docs/${path}
+        - id: payment-service
+          uri: lb://payment-service
+          predicates:
+            - Path=/payments/**, /v3/api-docs/payments/**
+          filters:
+            - RewritePath=/v3/api-docs/payments/(?<path>.*), /v3/api-docs/${path}
 
 springdoc:
   api-docs:
@@ -72,3 +77,5 @@ springdoc:
         url: /v3/api-docs/messages
       - name: Notification-Service
         url: /v3/api-docs/notifications
+      - name: Payment-Service
+        url: /v3/api-docs/payments

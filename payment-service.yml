@@ -39,5 +39,5 @@ management:
 # Razorpay Test Credentials (Replace in production)
 razorpay:
   key:
-    id: rzp_test_dummy_key_id
-    secret: dummy_key_secret_for_founderlink
+    id: ${RAZORPAY_KEY_ID:rzp_test_dummy_key_id}
+    secret: ${RAZORPAY_KEY_SECRET:dummy_key_secret_for_founderlink}

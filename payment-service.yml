@@ -4,8 +4,8 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/founderlink_payment
-    username: ${SPRING_DATASOURCE_USERNAME:abdulyahiya}
-    password: ${SPRING_DATASOURCE_PASSWORD:yahya9973}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
@@ -39,5 +39,5 @@ management:
 # Razorpay Credentials (injected via environment variables)
 razorpay:
   key:
-    id: ${RAZORPAY_KEY_ID:rzp_test_SXKeveANnvzMlz}
-    secret: ${RAZORPAY_KEY_SECRET:MSalZTHDiSjHdNdkrYTSAKL8}
+    id: ${RAZORPAY_KEY_ID}
+    secret: ${RAZORPAY_KEY_SECRET}

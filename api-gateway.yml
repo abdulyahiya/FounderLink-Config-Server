@@ -79,3 +79,8 @@ springdoc:
         url: /v3/api-docs/notifications
       - name: Payment-Service
         url: /v3/api-docs/payments
+
+ jwt:
+  secret: 5367566B59703373367639792F423F4528482B4D6251655468576D5A71347437
+  access-token-expiration: 86400000
+  refresh-token-expiration: 604800000

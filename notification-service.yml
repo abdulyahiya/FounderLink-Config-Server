@@ -20,8 +20,8 @@ springdoc:
     spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/founderlink_notification_db
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASOURCE_PASSWORD}
+    username: abdulyahiya
+    password: yahya9973
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:

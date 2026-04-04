@@ -1,18 +1,21 @@
-server:
-  port: 8082
-
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/founderlink_users
+    url: jdbc:postgresql://localhost:5432/founderlink_db
     username: abdulyahiya
     password: yahya9973
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: update    
+      ddl-auto: update
+    show-sql: true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 2000ms
 
 eureka:
   client:
@@ -25,8 +28,11 @@ eureka:
 
 jwt:
   secret: 5367566B59703373367639792F423F4528482B4D6251655468576D5A71347437
-  access-token-expiration: 86400000
-  refresh-token-expiration: 604800000
+
+logging:
+  level:
+    com.capgemini.user: INFO
+    org.springframework.cache: DEBUG
 
 springdoc:
   api-docs:
